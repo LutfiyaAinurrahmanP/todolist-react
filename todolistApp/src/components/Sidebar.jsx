@@ -3,7 +3,7 @@ export default function Sidebar({ todo, onClickSidebarTitle }) {
     <ul className="menu bg-accent rounded-box w-80 h-full">
       <li className="p-4">
         <h2
-          className="text-white/60 font-bold text-2xl hover:bg-none"
+          className="text-white/60 font-bold text-2xl hover:text-white/80"
           onClick={onClickSidebarTitle}
         >
           Todolist APP
@@ -11,7 +11,7 @@ export default function Sidebar({ todo, onClickSidebarTitle }) {
         <ul className="text-white">
           {todo.map((item, index) => (
             <li key={index}>
-              <p className="text-white text-lg">{item}</p>
+              <p className="text-white/70 text-lg hover:text-white">{item}</p>
             </li>
           ))}
         </ul>
